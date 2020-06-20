@@ -10,6 +10,9 @@
 
  uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 360 --enable-server on --vflip --hflip
 
+# make sure uv4l is up and running before app starts
+sleep 5
+ 
 # Start the STS-Pilot app
 #
 # Autodetect username
