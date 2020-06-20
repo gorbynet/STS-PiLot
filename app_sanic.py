@@ -148,12 +148,12 @@ def motor(request):
     if left and not cfg.chocks:
         left = int(left)
         if left >= -100 and left <= 100:
-            cfg.left_motor = left
+            cfg.left_motor = left * cfg.left_motor_trim
             hw.motor_two_speed(cfg.left_motor)
     if right and not cfg.chocks:
         right = int(right)
         if right >= -100 and right <= 100:
-            cfg.right_motor = right
+            cfg.right_motor = right * cfg.right_motor_trim
             hw.motor_one_speed(cfg.right_motor)
     return response.text('ok')
 

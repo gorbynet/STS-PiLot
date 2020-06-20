@@ -34,3 +34,5 @@ watchdog = 20
 timeout = 10
 left_motor = 0
 right_motor = 0
+left_motor_trim = 0
+right_motor_trim = 0.95
