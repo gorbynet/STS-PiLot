@@ -8,7 +8,7 @@
 # Start UV4L video streaming
 # uv4l --external-driver --device-name=video0 &
 
- uv4l --driver raspicam --auto-video_nr --encoding h264 --width 1280 --height 720 --enable-server on --vflip --hflip
+ uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 360 --enable-server on --vflip --hflip
 
 # Start the STS-Pilot app
 #
