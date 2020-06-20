@@ -35,4 +35,4 @@ timeout = 10
 left_motor = 0
 right_motor = 0
 left_motor_trim = 1
-right_motor_trim = 0.95
+right_motor_trim = 0.90
