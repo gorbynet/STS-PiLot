@@ -193,4 +193,4 @@ if __name__ == '__main__':
     wd = threading.Thread(name='watchdog_timer', target=watchdog_timer)
     wd.start()
     
-    app.run(host='0.0.0.0', port=80, debug=False, access_log=False)
+    app.run(host='0.0.0.0', port=5000, debug=False, access_log=False)
