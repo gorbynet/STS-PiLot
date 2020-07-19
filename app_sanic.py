@@ -133,7 +133,11 @@ def heartbeat(request):
     output['i1'] = hw.input_one_read()
     output['i2'] = hw.input_two_read()
     output['i3'] = hw.input_three_read()
+    if hw.input_three_read():
+        touchpad(3, True)
     output['i4'] = hw.input_four_read()
+    if hw.input_four_read():
+        touchpad(4, True)
     output['a1'] = hw.analog_one_read()
     output['a2'] = hw.analog_two_read()
     output['a3'] = hw.analog_three_read()
