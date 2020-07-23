@@ -8,7 +8,7 @@
 # Start UV4L video streaming
 # uv4l --external-driver --device-name=video0 &
 
- uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 360 --enable-server on --vflip --hflip --server-option --max-streams=10 --server-option --max-threads=12
+ uv4l --driver raspicam --auto-video_nr --encoding h264 --width 640 --height 480 --enable-server on --vflip --hflip --server-option --max-streams=10 --server-option --max-threads=12
 
 # make sure uv4l is up and running before app starts
 sleep 5
