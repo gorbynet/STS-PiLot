@@ -69,7 +69,8 @@ def touch_handler(channel, event):
         time.sleep(5)
         if cfg.chocks:
             hw.light_green_on()
-            os.system("sudo -s shutdown -h now")
+            # os.system("sudo -s shutdown -h now")
+            app.stop()
         else:
             hw.light_green_off()
             cfg.green = False
